@@ -50,7 +50,7 @@ class MyHomePage extends StatelessWidget {
       floatingActionButton: Consumer(
         builder: (BuildContext context, WidgetRef ref, Widget child) =>
             FloatingActionButton(
-          onPressed: () => ref.watch(countProvider.state).state++,
+          onPressed: () => ref.read(countProvider.state).state++,
           tooltip: 'Increment',
           child: Icon(Icons.add),
         ),
